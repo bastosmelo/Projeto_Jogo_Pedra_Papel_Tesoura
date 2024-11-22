@@ -1,26 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+  /* Reset básico */
+  body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  /* Corpo geral */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
   }
   
+  /* Container principal */
   .game-container {
     text-align: center;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   h1 {
     font-size: 24px;
-    color: #333333;
+    color: #343a40;
   }
   
   .scoreboard {
@@ -41,7 +53,7 @@ body {
   }
   
   button {
-    background-color: #007bff;
+    background-color: #343a40;
     color: white;
     border: none;
     border-radius: 5px;
@@ -52,7 +64,7 @@ body {
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: gray;
   }
   
   .hidden {
@@ -81,16 +93,23 @@ footer {
   }
   
   /* Estilo para ícones sociais */
-  .social-icons {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .social-icons img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid #333;
-    margin: 0 5px;
-    cursor: pointer;
-  }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espaçamento entre os ícones */
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #343a40;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Adiciona um efeito de hover */
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Aumenta levemente o tamanho ao passar o mouse */
+}
