@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedra, Papel e Tesoura - Jogo Automático</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Pedra, Papel e Tesoura</h1>
+    <div id="status">Aguardando escolha...</div>
+
+    <div class="scoreboard">
+      <div>
+        <h2>Jogador 1</h2>
+        <p>Pontos: <span id="score1">0</span></p>
+        <img id="image1" src="" alt="Escolha do Jogador 1" class="hidden">
+        <button id="player1-btn">Escolher</button>
+      </div>
+      <div>
+        <h2>Jogador 2</h2>
+        <p>Pontos: <span id="score2">0</span></p>
+        <img id="image2" src="" alt="Escolha do Jogador 2" class="hidden">
+        <button id="player2-btn">Escolher</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="play-again" class="hidden">Jogar Novamente</button>
+      <button id="reset">Zerar Placar</button>
+    </div>
+  </div>
+
+  <!-- Ícones Sociais -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/bruno-bastos-melo-442ba9bb" target="_blank"><img src="Imagens/LinkedIn.jpg" alt="LinkedIn" class="social-links"></a>
+            <a href="https://github.com/bastosmelo" target="_blank"><img src="Imagens/GitHub.jpg" alt="GitHub" class="social-links"></a>
+            <a href="https://www.facebook.com/bastosmelo" target="_blank"><img src="Imagens/Facebook.jpg" alt="Facebook" class="social-links"></a>
+            <a href="https://www.instagram.com/bastosmelo/" target="_blank"><img src="Imagens/Instagram.jpg" alt="Instagram" class="social-links"></a>
+            <a href="https://x.com/BrunoBastosMelo" target="_blank"><img src="Imagens/X-Twiter.jpg" alt="X-Twiter" class="social-links"></a>
+        </div>
+    <p>Bruno Bastos Melo © 2024. Todos os direitos reservados.</p>
+    <p><i>bruno.bastos@souunit.com.br</i></p>
+    </footer>
+    
+  <script src="script.js"></script>
+</body>
+</html>
